@@ -1,0 +1,4 @@
+#Mon Jan 29 22:46:50 ICT 2018
+base.0=F\:\\androidstudio\\Dupol\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

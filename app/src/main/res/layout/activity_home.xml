@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dupol.dupol.HomeActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="645dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="14dp">
+
+        <Button
+            android:id="@+id/buttonTakePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonChooseFoto"
+            android:layout_alignBottom="@+id/buttonChooseFoto"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:text="Take Pictute"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <ImageView
+            android:id="@+id/imageViewChoose"
+            android:layout_width="405dp"
+            android:layout_height="266dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <Button
+            android:id="@+id/buttonChooseFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextnama"
+            android:layout_marginBottom="51dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginRight="59dp"
+            android:layout_toLeftOf="@+id/buttonTakePicture"
+            android:layout_toStartOf="@+id/buttonTakePicture"
+            android:text="Choose..."
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="316dp" />
+
+        <EditText
+            android:id="@+id/editTextnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTeksTanggal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="47dp"
+            android:hint="input Nama" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTeksTanggal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:entries="@array/gender"></Spinner>
+
+        <EditText
+            android:id="@+id/editTeksTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTeksAlamat"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:hint="input Tanggal lahir" />
+
+        <EditText
+            android:id="@+id/editTeksAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTeksNoHp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="input Alamat" />
+
+        <EditText
+            android:id="@+id/editTeksNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Savedata"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="9dp"
+            android:hint="input nomor HP"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/Savedata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

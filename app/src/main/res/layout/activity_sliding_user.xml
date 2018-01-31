@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dupol.dupol.Activity.SlidingUserActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbaruser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shutdown" />
+
+        <TextView
+            android:id="@+id/teksloggout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_marginLeft="70dp"
+            android:textSize="30dp"
+            android:id="@+id/teksduta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duta Polinema"
+            android:gravity="center"
+
+            />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayoutuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+        </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPageruser"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+        </android.support.v4.view.ViewPager>
+</LinearLayout>

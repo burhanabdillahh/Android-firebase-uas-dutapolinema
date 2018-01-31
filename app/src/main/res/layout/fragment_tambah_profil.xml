@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dupol.dupol.fragment.TambahProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/imageViewF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluelight"
+            android:layout_margin="15dp"
+            />
+        <Button
+            android:id="@+id/buttonchooseF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Photo..."
+            />
+
+        <EditText
+            android:id="@+id/editTeksNamaF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerGenderF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender"
+            android:layout_margin="15dp"
+            >
+
+        </Spinner>
+        <EditText
+            android:id="@+id/editTeksTanggalF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Tanggal Lahir "
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/editTeksAddressF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Alamat"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/editTeksNohpF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="No HP"
+            android:inputType="textPersonName"
+            />
+
+        <Button
+            android:id="@+id/buttonEditProfilF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confrim"
+            android:layout_margin="15dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

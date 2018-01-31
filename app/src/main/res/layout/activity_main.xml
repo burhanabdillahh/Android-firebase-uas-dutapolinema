@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dupol.dupol.MainActivity">
+
+   <LinearLayout
+       android:layout_centerVertical="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:text="Login Duta Kampus"
+           android:textAlignment="center"
+           android:textAppearance="@style/TextAppearance.AppCompat"
+           android:textSize="18sp">
+
+       </TextView>
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:lineSpacingExtra="24sp"
+           android:text="Politeknik Negeri Malang"
+           android:textAlignment="center"
+           android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+
+       <EditText
+           android:id="@+id/editTeksEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+           android:hint="Email"
+           android:inputType="textEmailAddress"
+        />
+
+
+       <EditText
+           android:id="@+id/editTeksPassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+           android:hint="Password"
+           android:inputType="textPassword"
+           />
+       <Button
+           android:id="@+id/buttonLogin"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Login"
+           android:layout_margin="15dp"
+           />
+
+       <TextView
+           android:id="@+id/SignUp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Don't have accout? SingUp here!"
+           android:textSize="12sp"
+           android:layout_margin="15dp"
+           android:textAlignment="center"
+         />
+
+   </LinearLayout>
+
+
+</RelativeLayout>
